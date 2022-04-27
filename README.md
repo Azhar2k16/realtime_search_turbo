@@ -7,16 +7,13 @@ Obviously, this example is very very primitive. There is a ton we could extract 
 
 Some recommendations to extend this further might be:
 
-⋅⋅* Use something like pg_search for better search functionality and performance
-⋅⋅* Extract more logic from the controller to be used for other types of turbo_frame requests. A lot of that logic could move to the ApplicationController and become near automatic based on the request
-⋅⋅* Consider turbo streams as an alternative realtime updating mechanism.
+* Use something like pg_search for better search functionality and performance
+* Extract more logic from the controller to be used for other types of turbo_frame requests. A lot of that logic could move to the ApplicationController and become near automatic based on the request
+* Consider turbo streams as an alternative realtime updating mechanism.
 
 
-## 🔗 Demo
-```
-https://realsearchs.herokuapp.com/
+## 🔗 [!Demo](https://realsearchs.herokuapp.com/)
 
-```
 
 
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
