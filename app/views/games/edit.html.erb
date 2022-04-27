@@ -1,10 +1,12 @@
-<h1>Editing game</h1>
+<h1 class="font-bold text-2xl mb-3">Editing Game</h1>
 
 <%= render "form", game: @game %>
 
 <br>
 
 <div>
-  <%= link_to "Show this game", @game %> |
-  <%= link_to "Back to games", games_path %>
+  <%= link_to "Show this game", @game, class: "px-4 py-3 font-medium
+    bg-orange-300 text-neutal-900 inline-flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
+  <%= link_to "Back to games", games_path, class: "px-4 py-3 font-medium
+    bg-orange-300 text-neutal-900 inline-flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
 </div>

@@ -12,11 +12,15 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.label :name, style: "display: block", class: "font-bold text-1xl mb-2" %>
+    <%= form.text_field :name, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none mb-6" %>
+  </div>
+  <div class="flex space-x-3">
+  
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit 'Create', class: "px-4 py-3 font-medium
+      bg-orange-300 text-neutal-900 rounded flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
   </div>
 <% end %>
