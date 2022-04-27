@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: hot_search_development
+
+test:
+  <<: *default
+  database: hot_search_test
+
+production:
+  <<: *default
+  database: hot_search_production
+  username: hot_search
+  password: <%= ENV["HOT_SEARCH_DATABASE_PASSWORD"] %>
+
+
